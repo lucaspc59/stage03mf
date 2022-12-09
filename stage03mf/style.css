@@ -1,0 +1,247 @@
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+
+
+}
+
+
+:root{
+
+
+--ff-texting:'Palanquin', sans-serif;
+--ff-heading: 'Staatliches', cursive;
+
+--fc-primary: white;
+--fc-secundary:hsl(232, 17%, 35%);
+--fc-tertiary:hsl(274, 84%, 12%);
+
+--bg-primary:hsl(218, 17%, 62%);
+--bg-secundary:hsl(275, 18%, 79%);
+--bg-tertiary:hsl(312, 91%, 96%);
+--bg-quaternary:hsl(233, 100%, 97%);
+
+font-size: 62.5%;
+--fs-header:4rem;
+--fs-p:1.3rem;
+--fs-h2:2rem;
+
+
+}
+
+
+
+body{
+
+background: var(--bg-quaternary);
+
+
+}
+
+
+.page{
+
+
+max-width: 38.4rem;
+margin: 0 auto;
+height: 200rem;
+
+}
+
+
+
+
+
+
+header{
+
+  background:var(--bg-primary);
+  color: var(--fc-primary);
+
+  text-align: center;
+
+  height: 31rem;
+}
+
+header img{
+
+margin:3.2rem auto 3rem;
+
+
+
+
+}
+
+
+
+header h1{
+
+font-weight: 400;
+font-family: var(--ff-heading);
+font-size: var(--fs-header);
+letter-spacing: 0.2rem;
+line-height: 4.9rem;
+
+text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+
+
+}
+
+
+
+
+
+.logo-back{
+
+
+  width: 100%;
+  height: 4.9rem;
+  background: #CBC0D3;
+
+
+}
+
+main p{
+
+margin: 1.4rem auto 6rem;
+
+ 
+font-weight: 500;
+font-family: var(--ff-texting);
+text-align: center;
+line-height: 1.5rem;
+font-size: var(--fs-p);
+color: var(--fc-tertiary);
+}
+
+
+
+.card{
+  position: relative;
+  
+}
+
+.cards{
+
+position: relative;
+  
+}
+
+
+
+.card h2{
+
+position: absolute;
+bottom: 19.9rem;
+left: 19.2rem;
+
+
+font-family: var(--ff-heading);
+font-size: var(--fs-h2);
+color: var(--fc-secundary);
+letter-spacing: 0.05em;
+font-weight: 400;
+line-height: 3.8rem;
+text-align: center;
+
+
+background: #FEEAFA;
+border-radius: 2rem;
+
+width: 11.2rem;
+height: 3.5rem;
+
+
+animation-name: topdown;
+animation-duration: 1800ms;
+}
+
+.cards h2{
+
+  position: absolute;
+  bottom: 40rem;
+  left: 19rem;
+  
+
+
+
+  font-family: var(--ff-heading);
+  font-size: var(--fs-h2);
+  color: var(--fc-secundary);
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  line-height: 3.8rem;
+  text-align: center;
+  
+  
+  background: #FEEAFA;
+  border-radius: 2rem;
+  
+  width: 11.2rem;
+  height: 3.5rem;
+
+
+  animation-name: topdown;
+  animation-duration: 1800ms;
+
+}
+
+
+#allcards{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+gap: 3.1rem;
+
+
+animation-name: downtop;
+animation-duration: 800ms;
+
+}
+
+
+
+@keyframes downtop {
+
+0%{
+
+opacity: 0;
+transform: translateY(30px);
+
+}
+
+100%{
+
+opacity: 1;
+transform: translateY(0);
+
+}
+
+
+}
+
+
+@keyframes topdown {
+
+  0%{
+  
+  opacity: 0;
+  transform: translateY(-30px);
+  
+  }
+  
+  100%{
+  
+  opacity: 1;
+  transform: translateY(0);
+  
+  }
+  
+  
+  }
